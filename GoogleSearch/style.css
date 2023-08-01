@@ -1,0 +1,88 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #e8e8f3;
+}
+
+#logo{
+    width: 30vh;
+    margin-top: 30vh;
+    margin-bottom: 10px;
+}
+
+#zoom{
+    width: 15px;
+    height: 15px;
+    opacity: 0.5;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    margin: 10px;
+}
+
+input{
+    border-radius: 20px;
+    border: none;
+    background: #e8e8f3;
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, 0.15),
+    -7px -7px 20px rgba(255, 255, 255, 1),
+    inset 0px 0px 4px rgba(255, 255, 255, 0.2),
+    inset 7px 7px 15px rgba(55, 84, 170, 0),
+    inset -7px -7px 20px rgba(255, 255, 255, 0),
+    0px 0px 4px rgba(255, 255, 255, 0);
+}
+
+input:hover{
+    box-shadow:
+    inset 0px 0px 4px rgba(255, 255, 255, 1),
+    inset 7px 7px 15px rgba(55, 84, 170, 0.15),
+    inset -7px -7px 20px rgba(255, 255, 255, 0);
+
+}
+
+input[name="q"]{
+    padding-left: 10px;
+    width: 500px;
+    height: 35px;
+    font-size: 25px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: rgba(18, 32, 65, 0.44);
+    font-weight: lighter;
+}
+input[name="q"]:focus{
+    outline: none;
+}
+
+.input-block{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+input[type="submit"]{
+    height: 5vh;
+    width: 150px;
+    color: rgba(18, 32, 65, 0.44);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.submit-buttons{
+    padding: 5px;
+}
+
+@media (max-width: 600px) {
+    input[name="q"]{
+        width: 100%;
+    }
+}
